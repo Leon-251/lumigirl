@@ -2,12 +2,15 @@
 <header><a class="brand" href="./index.html">LumiGirl<span>✦</span></a><span>颜值测评</span></header>
 <main>
 <section id="home"><h1>这是<em>LumiGirl</em>颜值测评</h1><p class="intro">上传一张照片，看看你的颜值娱乐分、明星相似度和上镜风格。</p>
-<div class="layout"><div><div id="drop" class="studio">
-<label class="frame" for="file" aria-label="选择或更换照片"><span class="spark">✦</span><span class="empty"><i></i><b>Lg.</b></span><img id="preview" alt="所选照片预览" hidden></label>
-<label class="pick"><input id="file" aria-describedby="photo-guide" type="file" accept="image/*"><span id="pickText">选择照片</span><span aria-hidden="true">＋</span></label></div>
+<div class="layout"><div>
+<label id="drop" class="studio" for="file">
+  <input id="file" aria-labelledby="pickText" aria-describedby="photo-guide" type="file" accept="image/*">
+  <span class="frame"><span class="spark" aria-hidden="true">✦</span><span class="empty" aria-hidden="true"><i></i><b>Lg.</b></span><img id="preview" alt="所选照片预览" hidden></span>
+  <span class="pick"><span id="pickText">选择照片</span><span aria-hidden="true">＋</span></span>
+</label>
 <p id="photo-guide">建议上传 <strong>正面 · 高清 · 光线均匀</strong> 的个人照，以获得更准确的测评结果。</p>
 <p id="feedback" role="status" hidden></p></div>
-<div class="controls"><fieldset><legend>性别</legend><div id="gender" class="choices"></div></fieldset><fieldset><legend>风格偏好</legend><div id="style" class="choices styles"></div></fieldset><button id="start" class="primary" disabled>开始颜值测评 <span>↗</span></button><small>评分、明星相似度与排名为算法模拟，仅供娱乐</small></div></div></section>
+<div class="controls"><fieldset><legend>性别</legend><div id="gender" class="choices"></div></fieldset><fieldset><legend>风格偏好</legend><div id="style" class="choices styles"></div></fieldset><button id="start" class="primary" disabled>开始颜值测评</button><small>评分、明星相似度与排名为算法模拟，仅供娱乐</small></div></div></section>
 <section id="scan" hidden>
   <h1>正在分析<span aria-hidden="true">…</span></h1>
   <div class="scanner"><img id="scanPhoto" alt="本次测评照片"><div class="scan-grid" aria-hidden="true"></div><i aria-hidden="true"></i></div>
