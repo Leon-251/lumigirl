@@ -56,7 +56,7 @@ async function acceptFile(file){
   stopDetection();clearPoster();report=null;
   if(current)URL.revokeObjectURL(current.url);
   current=null;$("start").disabled=true;$("preview").hidden=true;$("preview").removeAttribute("src");
-  document.querySelector(".empty").hidden=false;$("pickText").textContent="选择照片";
+  document.querySelector(".empty").hidden=false;$("pickText").textContent="点击上传照片";
   $("feedback").hidden=false;
   $("feedback").textContent="正在读取图片…";
   const url=URL.createObjectURL(file);
